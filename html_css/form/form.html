@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<title>Form</title>
+</head>
+<body>
+	<form class="form" action="#">
+		<h1 id="registration_header">Регистрация</h1>
+		<hr>
+		<div class="registration_form">
+			<div class="input email_form">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="example@site.domain" pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+" minlength="4" required>
+			</div>
+			
+			<div class="input password_form">
+				<div class="password_form">
+					<label for="password">Пароль</label>
+					<input type="password" name="pasword" id="password" placeholder="password" pattern="[^\s]+" minlength="8" required>
+				</div>
+				
+				<div class="password_check_form">
+					<label for="password_check">Повторите пароль</label>
+					<input type="password" name="password_check" id="password_check" placeholder="password" pattern="[^\s]+"minlength="8" required>
+				</div>
+				
+			</div>
+			
+			<div class="input full_name_form">
+				<label for="full_name">ФИО</label>
+				<input type="text" name="full_name" id="full_name" placeholder="Игорев Игорь Игоревич" pattern="[a-zA-Zа-яА-Я\s]+" minlength="5" required>
+			</div>
+			
+			<div class="input age_form">
+				<label for="age">Возраст</label>
+				<input type="text" name="age" id="age" placeholder="18" pattern="[0-9]+" required>
+			</div>
+		</div>
+		<hr>
+		<div class="controls">
+			<button id="sent">Отправить</button> 
+			<button id="cancel">Отмена</button> 
+		</div>
+		
+	</form>	
+</body>
+</html>
